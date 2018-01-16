@@ -1,2 +1,2 @@
 #!/bin/bash
-grep - | tr "\n" ":" | cut -d':' -f$(seq -s, 1 2 100) | tr ":" "\n" | head -c -1 
+grep - | tr "\n" ":" | cut -d':' -f$(seq -s, 1 2 100) | tr ":" "\n" 
