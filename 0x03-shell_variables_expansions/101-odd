@@ -1,0 +1,2 @@
+#!/bin/bash
+grep - | tr "\n" ":" | cut -d':' -f$(seq -s, 1 2 5000) | tr ":" "\n" 
