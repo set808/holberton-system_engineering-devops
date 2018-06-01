@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Displays Holberton School 10 times and also says Hi on the 9th call
+i="0"
+while (( i < 10 ))
+do
+     if (( i == 9 ))
+     then
+	echo "Hi"
+     fi
+echo "Holberton School"
+(( i += 1 ))
+done
