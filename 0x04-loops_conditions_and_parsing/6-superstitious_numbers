@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # More loop scripts
-i="1"
+i=1
 while (( i <= 20 ))
 do
 	case $i in
