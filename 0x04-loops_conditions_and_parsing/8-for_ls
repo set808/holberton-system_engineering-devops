@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # displays the content of the current directory in a list
-for i in $(ls | cat); do
-echo $i | cut -d '-' -f2
+COMMAND=$(ls)
+for i in $COMMAND; do
+echo "$i" | cut -d "-" -f2
 done
