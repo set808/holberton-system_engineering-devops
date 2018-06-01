@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Prints statements based on if conditions
+COUNT="1"
+END="10"
+while (( COUNT <= END ))
+do
+	if (( COUNT == 4 ))
+	then
+		echo "bad luck"
+	elif (( COUNT == 8 ))
+	then
+		echo "good luck"
+	else
+		echo "Holberton School"
+	fi
+(( COUNT += 1 ))
+done
