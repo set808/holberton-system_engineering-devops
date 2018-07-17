@@ -6,7 +6,8 @@ STRING=" error_page 404 /404.html;\n location = /404.html {\n root /usr/share/ng
 sudo apt-get -y update
 sudo apt-get -y install nginx
 echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
+echo "Ceci n'est pas une page" | sudo tee /usr/share/nginx/html/404.html
 service nginx start
 sudo sed -i "30i $REDIRECT" $FILE
-sudo sed -i "33i$STRING" $FILE
+sudo sed -i "33i $STRING" $FILE
 service nginx restart
