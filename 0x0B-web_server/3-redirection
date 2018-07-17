@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Sets up /redirect_me page redirection
-FILE="/etc/nginx/sites-available/default"
+FILE=/etc/nginx/sites-available/default
 REDIRECT="location /redirect_me {\n return 301 https://youtu.be/dQw4w9WgXcQ\n}\n"
 
 sudo apt-get -y update
 sudo apt-get -y install nginx
 echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
-sudo service nginx start
+service nginx start
 sudo sed -i "30i $REDIRECT" $FILE
-sudo service nginx reload
+service nginx restart
