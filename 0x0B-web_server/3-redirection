@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Sets up /redirect_me page redirection
 FILE=/etc/nginx/sites-available/default
-REDIRECT="location /redirect_me {\n return 301 https://youtu.be/dQw4w9WgXcQ\n}\n"
+REDIRECT="location /redirect_me {\n return 301 https://youtu.be/dQw4w9WgXcQ;\n}\n"
 
 sudo apt-get -y update
 sudo apt-get -y install nginx
