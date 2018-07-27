@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Create custom http header
+FILE=/etc/nginx/sites-available/default
+
+sudo sed -i "23i \\\tadd_header X-Served-By \$hostname;" $FILE
+sudo service nginx restart
